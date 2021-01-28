@@ -1,8 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Roboto', sans-serif;
-    background: #283048;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 h1{
@@ -36,6 +38,17 @@ input{
     box-sizing: border-box;
     color: #2980B9;
     border: 3px solid rgba(0,0,0, 0);
+}
+
+.test{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #283048;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
 }
 
 .completedTask{
@@ -83,7 +96,6 @@ li:hover .del-edit{
 
 #container{
     width: 360px;
-    margin: 100px auto;
     box-shadow: 0 0 3px rgba(0,0,0, 0.1);
     background: #F7F7F7;
 }
